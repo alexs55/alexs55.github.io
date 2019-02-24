@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+canvas {
+  border: 1px soild black;
+}
+
+#Titl{
+    position: absolute;
+    margin-left: 15vw;
+}
+
+p{
+    font-size: 35px;
+    line-height: 38px;
+}
+
+.rounded{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 1s, transform 2s;
+    
+}
+
+.rounded:hover{
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transform: translate(5px,45px);
+  transition: box-shadow 1s, transform 2s;
+  
+}
