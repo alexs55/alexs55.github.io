@@ -11,8 +11,10 @@ canvas {
 }
 
 #Titl{
+    text-align: center;
     position: absolute;
-    margin-left: 1vw;
+    margin-left: 6vw;
+   
 }
 
 p{
@@ -40,3 +42,13 @@ h1{
   transition: box-shadow 1s, transform 2s;
   
 }
+
+@media only screen and (max-width: 600px) {
+  #Titl{
+    text-align: center;
+    position: absolute;
+    margin-left: 0vw;
+   
+}
+  
+  } 
