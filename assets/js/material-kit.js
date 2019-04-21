@@ -15,6 +15,22 @@
 
  */
 
+
+function toggleImage(e) {
+  if (e.type == "touchstart") {
+    link.removeEventListener("mouseenter", toggleImage);
+    link.removeEventListener("mouseleave", toggleImage);
+  }
+
+  link.classList.toggle("hover");
+}
+
+var link = document.querySelector("a");
+
+["mouseenter", "mouseleave", "touchstart"].forEach(function (event) {
+  link.addEventListener(event, toggleImage, false);
+});
+
 var big_image;
 
 $(document).ready(function() {
